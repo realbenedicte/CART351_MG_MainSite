@@ -1,0 +1,53 @@
+/* main css */
+
+/* fonts */
+@font-face {
+  font-family: "Libre Franklin";
+  src: url("fonts/LibreFranklin-Italic-VariableFont_wght.ttf")
+      format("ttf supports variations"),
+    url("fonts/LibreFranklin-VariableFont_wght.ttf")
+      format("ttf supports variations");
+  font-weight: 100 1000;
+  font-stretch: 25% 151%;
+}
+
+/* animations */
+@keyframes blinky {
+  0% {
+    color: black;
+  }
+  100% {
+    color: #f2f2f2;
+  }
+}
+
+body {
+  background-color: #f2f2f2;
+}
+
+h2 {
+  text-align: center;
+}
+
+h3 {
+  text-align: center;
+}
+
+body {
+  font-family: "Libre Franklin";
+}
+
+.homeButton{
+  font-family: helvetica;
+  font-weight: bold;
+  font-size: 190%;
+  margin: auto;
+  width: 50%;
+  text-align: center;
+}
+
+.hoverAnimation:hover{
+	animation-name: blinky;
+  animation-duration: 0.4s;
+  animation-iteration-count: infinite;
+}

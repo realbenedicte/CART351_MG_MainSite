@@ -37,7 +37,7 @@ body {
   font-family: "Libre Franklin";
 }
 
-.homeButton{
+.homeButton {
   font-family: helvetica;
   font-weight: bold;
   font-size: 190%;
@@ -46,8 +46,53 @@ body {
   text-align: center;
 }
 
-.hoverAnimation:hover{
-	animation-name: blinky;
+.hoverAnimation:hover {
+  animation-name: blinky;
   animation-duration: 0.4s;
   animation-iteration-count: infinite;
+}
+
+.outer-circle {
+  height: 90px;
+  width: 90px;
+  background-color: black;
+  border-radius: 80px;
+}
+
+.inner-object01 {
+  height: 40px;
+  width: 20px;
+  background-color: white;
+  border-radius: 4px;
+  transform: skewY(-70deg) translateX(35px) translateY(120px);
+}
+
+.inner-object02 {
+  height: 40px;
+  width: 20px;
+  background-color: black;
+  border-radius: 4px;
+  transform: skewY(-70deg) translateX(35px) translateY(120px) rotate(3deg);
+}
+
+.inner-object03 {
+  height: 40px;
+  width: 20px;
+  background-color: black;
+  border-radius: 4px;
+  transform: skewY(-70deg) translateX(35px) translateY(120px) rotate(10deg);
+}
+
+.inner-object04 {
+  height: 40px;
+  width: 20px;
+  background-color: black;
+  border-radius: 4px;
+  transform: skewY(-70deg) translateX(35px) translateY(120px) rotate(45deg);
+}
+
+.circle-container {
+  transform: translateX(500px) translateY(40px);
+  margin: auto;
+  display: inline-block;
 }

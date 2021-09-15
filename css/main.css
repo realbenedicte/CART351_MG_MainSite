@@ -1,5 +1,24 @@
 /* main css */
 
+body {
+  background-color: #f2f2f2;
+  margin-left: 50px;
+  margin-right: 50px;
+}
+
+h2 {
+  text-align: center;
+}
+
+h3 {
+  text-align: center;
+  margin-top: 30px;
+}
+
+body {
+  font-family: "Libre Franklin";
+}
+
 /* fonts */
 @font-face {
   font-family: "Libre Franklin";
@@ -21,35 +40,92 @@
   }
 }
 
-body {
-  background-color: #f2f2f2;
+.main-title-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
-h2 {
-  text-align: center;
+.dove-img-container {
+  margin-left: 5px;
+  margin-right: 5px;
+  width: 120px;
+  height: 120px;
 }
 
-h3 {
-  text-align: center;
+.dove-img-container img {
+  height: 100%;
+  width: 100%;
+  filter: contrast(200%);
 }
 
-body {
-  font-family: "Libre Franklin";
+.dove-img-container2 {
+  margin-left: 0px;
+  margin-right: 0px;
+  width: 120px;
+  height: 120px;
+  transform: scaleX(-1);
+}
+
+.dove-img-container2 img {
+  height: 100%;
+  width: 100%;
+  filter: contrast(200%);
+}
+
+.heart-image-container {
+  margin-left: 10px;
+  margin-right: 10px;
+  width: 100px;
+  height: 100px;
+}
+
+.heart-image-container img {
+  height: 100%;
+  width: 100%;
 }
 
 .homeButton {
   font-family: helvetica;
   font-weight: bold;
   font-size: 190%;
-  margin: auto;
-  width: 50%;
+  margin-left: 10px;
+  margin-right: 10px;
   text-align: center;
+  color: black;
 }
 
 .hoverAnimation:hover {
   animation-name: blinky;
   animation-duration: 0.4s;
   animation-iteration-count: infinite;
+  cursor: pointer;
+}
+
+.nav-container {
+}
+.main-nav {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: auto;
+  padding: 0;
+  width: 100%;
+}
+
+.main-nav li {
+  list-style-type: none;
+}
+
+.main-nav a {
+  text-decoration: none;
+  padding: 20px;
+  display: block;
+}
+
+.main-nav > li > a {
+  color: #000000;
+  font-size: 20px;
 }
 
 .circle-container {

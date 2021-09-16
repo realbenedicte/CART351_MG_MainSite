@@ -49,7 +49,7 @@ body {
 }
 
 .main-title-container p{
-  padding-top: 15px;
+  
   text-shadow: #FFC0CB 2px 0 10px;
 }
 
@@ -109,7 +109,7 @@ color: white;
 .homeButton {
   font-family: helvetica;
   font-weight: bold;
-  font-size: 190%;
+  font-size: 300%;
   margin-left: 10px;
   margin-right: 10px;
   text-align: center;

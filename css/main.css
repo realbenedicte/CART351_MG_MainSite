@@ -30,7 +30,6 @@ body {
   font-stretch: 25% 151%;
 }
 
-
 /* animations */
 @keyframes blinky {
   0% {
@@ -41,29 +40,15 @@ body {
   }
 }
 
-
 .main-title-container {
   display: flex;
   justify-content: center;
-  background-image:linear-gradient(blue, #f2f2f2);
+  background-image: linear-gradient(blue, #f2f2f2);
 }
 
-.main-title-container p{
-  
-  text-shadow: #FFC0CB 2px 0 10px;
-}
-
-.main-name{
-  z-index: 20px;
-  padding: 20px;
-  border-radius: 200px;
-  transform:translateY(10px);
-  background-color: blue;
-  background-image:linear-gradient(blue, #f2f2f2);
-}
-
-.main-name p{
-color: white;
+.main-title-container a {
+  text-shadow: #ffc0cb 2px 0 10px;
+  text-decoration: none;
 }
 
 .dove-img-container {
@@ -85,7 +70,6 @@ color: white;
   width: 120px;
   height: 120px;
   transform: scaleX(-1);
-
 }
 
 .dove-img-container2 img {
@@ -94,19 +78,7 @@ color: white;
   filter: contrast(200%);
 }
 
-.heart-image-container {
-  margin-left: 10px;
-  margin-right: 10px;
-  width: 100px;
-  height: 100px;
-}
-
-.heart-image-container img {
-  height: 100%;
-  width: 100%;
-}
-
-.homeButton {
+.homeButton a {
   font-family: helvetica;
   font-weight: bold;
   font-size: 300%;
@@ -116,14 +88,15 @@ color: white;
   color: black;
 }
 
-.hoverAnimation:hover {
+.homeButton p {
+  transform: translateY(10px);
+}
+
+.hoverAnimation:hover a {
   animation-name: blinky;
   animation-duration: 0.4s;
   animation-iteration-count: infinite;
   cursor: pointer;
-}
-
-.nav-container {
 }
 
 .main-nav {
@@ -133,13 +106,11 @@ color: white;
   margin: auto;
   padding: 0;
   width: 100%;
-
 }
 
 .main-nav li {
   list-style-type: none;
 }
-
 
 .main-nav a {
   text-decoration: none;
@@ -153,12 +124,12 @@ color: white;
   font-size: 22px;
 }
 
-.main-nav > li > a:hover{
-color: black;
-text-shadow: #FFC0CB 2px 0 10px;
+.main-nav > li > a:hover {
+  color: black;
+  text-shadow: #ffc0cb 2px 0 10px;
 }
 
-main{
+main {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -176,22 +147,21 @@ svg {
   width: 400px;
 }
 
-.circle-container{
-position: relative;
+.circle-container {
+  position: relative;
 }
 
-.circle-text{
-background-image:radial-gradient(pink 40%,#f2f2f2 80%);
-/* text-shadow: black 1px 0 20px */
+.circle-text {
+  background-image: radial-gradient(pink 40%, #f2f2f2 80%);
+  /* text-shadow: black 1px 0 20px */
 }
 
-.comp-gif{
+.comp-gif {
   position: absolute;
   top: 50px;
   left: 50px;
 }
 
-
-.comp-gif img{
-width: 300px;
+.comp-gif img {
+  width: 300px;
 }

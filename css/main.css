@@ -165,3 +165,7 @@ svg {
 .comp-gif img {
   width: 300px;
 }
+
+.main-nav > li > a#exercise-title{
+  background-color: red;
+}

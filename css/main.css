@@ -5,6 +5,8 @@ body {
   margin-left: 50px;
   margin-right: 50px;
   font-family: "Libre Franklin";
+  background-image: url("/images/pixil-frame-0.png");
+  background-repeat: repeat-y repeat-x;
 }
 
 h2 {
@@ -27,11 +29,17 @@ h3 {
 
 #footer {
   position: absolute;
+  color: black;
   bottom: 0;
   width: 100%;
-  height: 2.5rem;            /* Footer height */
+  height: 2.5rem;      /* Footer height */
 }
 
+footer p{
+  background-color: #f2f2f2;
+  display:inline-block;
+
+}
 /* fonts */
 @font-face {
   font-family: "Libre Franklin";
@@ -114,6 +122,7 @@ h3 {
   margin: auto;
   padding: 0;
   width: 100%;
+  background-color: #f2f2f2;
 }
 
 .main-nav li {
@@ -156,7 +165,10 @@ svg {
 }
 
 .circle-container {
-  position: relative;
+  /* position: relative; */
+  position: absolute;
+  top: 50%;
+  transform: translate(0, -40%);
 }
 
 .circle-text {
@@ -200,16 +212,19 @@ svg {
   justify-content: space-between;
   width: 100%;
   height: 50%;
-  margin-top: 150px;
+  /* margin-top: 150px; */
+  position: absolute;
+  top: 50%;
+  transform: translate(0, -50%);
   padding: 0px;
 }
 
 .exercises-links li {
   list-style-type: none;
-  margin-top: 30px;
+  /* margin-top: 30px; */
   height: 200px;
   width: 200px;
-  background-image: radial-gradient(#f2f2f2 20%, #bde5ff 80%);
+  background-image: radial-gradient(#bde5ff  20%, #f2f2f2  80%);
   text-align: center;
   display: grid;
   justify-content: center;
@@ -225,13 +240,13 @@ svg {
 }
 
 #exercise2{
-  background-image: radial-gradient(#f2f2f2 20%, #a1daff 80%);
+  background-image: radial-gradient(#a1daff 20%, #f2f2f2 80%);
 }
 #exercise3{
-    background-image: radial-gradient(#f2f2f2 20%, #61c0ff 80%);
+    background-image: radial-gradient(#61c0ff 20%, #f2f2f2 80%);
 }
 #exercise4{
-    background-image: radial-gradient(#f2f2f2 20%, #12a2ff 80%);
+    background-image: radial-gradient(#12a2ff 20%, #f2f2f2 80%);
 }
 
 /* Semester Project Page css  */
@@ -254,19 +269,19 @@ svg {
 }
 
 #sp-1{
-  background-image: radial-gradient(#f2f2f2 20%, rgba(0, 255, 0, 0.2) 80%);
+  background-image: radial-gradient(rgba(0, 255, 0, 0.2)  20%, #f2f2f2 80%);
 }
 #sp-2{
-    background-image: radial-gradient(#f2f2f2 20%, rgba(0, 255, 0, 0.4) 80%);
+    background-image: radial-gradient(rgba(0, 255, 0, 0.4) 20%, #f2f2f2 80%);
 }
 #sp-3{
-    background-image: radial-gradient(#f2f2f2 20%, rgba(0, 255, 0, 0.6) 80%);
+    background-image: radial-gradient(rgba(0, 255, 0, 0.6) 20%, #f2f2f2  80%);
 }
 #sp-4{
-    background-image: radial-gradient(#f2f2f2 20%, rgba(0, 255, 0, 0.8) 80%);
+    background-image: radial-gradient(rgba(0, 255, 0, 0.8) 20%, #f2f2f2 80%);
 }
 #sp-5{
-    background-image: radial-gradient(#f2f2f2 20%, rgba(0, 255, 0) 80%);
+    background-image: radial-gradient( rgba(0, 255, 0) 20%, #f2f2f2 80%);
 }
 
 /* Reflections Page css  */
@@ -289,16 +304,16 @@ svg {
 }
 
 #reflection-1{
-  background-image: radial-gradient(#f2f2f2 20%, rgba(255, 0, 0, 0.2) 80%);
+  background-image: radial-gradient(rgba(255, 0, 0, 0.2) 20%, #f2f2f2  80%);
 }
 #reflection-2{
-    background-image: radial-gradient(#f2f2f2 20%, rgba(255, 0, 0, 0.4) 80%);
+    background-image: radial-gradient(rgba(255, 0, 0, 0.4) 20%, #f2f2f2 80%);
 }
 #reflection-3{
-    background-image: radial-gradient(#f2f2f2 20%, rgba(255, 0, 0, 0.6) 80%);
+    background-image: radial-gradient(rgba(255, 0, 0, 0.6)20%, #f2f2f2  80%);
 }
 #reflection-4{
-    background-image: radial-gradient(#f2f2f2 20%, rgba(255, 0, 0, 0.8) 80%);
+    background-image: radial-gradient( rgba(255, 0, 0, 0.8) 20%, #f2f2f2 80%);
 }
 
 /* Presentation Page css  */
@@ -321,10 +336,10 @@ svg {
 }
 
 #presentation-1{
-  background-image: radial-gradient(#f2f2f2 20%, rgba(0, 0, 0, 0.2) 80%);
+  background-image: radial-gradient(rgba(0, 0, 0, 0.2) 20%, #f2f2f2 80%);
 }
 #presentation-2{
-    background-image: radial-gradient(#f2f2f2 20%, rgba(0, 0, 0, 0.4) 80%);
+    background-image: radial-gradient(rgba(0, 0, 0, 0.4) 20%, #f2f2f2 80%);
 }
 
 .presentation-links {
@@ -334,8 +349,11 @@ svg {
   justify-content: center;
   width: 100%;
   height: 50%;
-  margin-top: 150px;
+  /* margin-top: 150px; */
   padding: 0px;
+  position: absolute;
+  top: 50%;
+  transform: translate(0, -50%);
 }
 
 .presentation-links li {

@@ -8,21 +8,25 @@ body {
   background-image: linear-gradient(red, yellow);
   display: none;
   margin: 20px;
+  border-radius: 500px;
+  border-color: black;
+  border-style: solid;
 }
-
 
 #maximeCanvas2 {
   background-image: linear-gradient(blue, yellow);
   display: none;
   margin: 20px;
+  border-color: black;
+  border-style: solid;
 }
 
-.centre-test{
-display: flex;
-align-items: center;
-justify-content: center;
-position: relative;
-min-height: 100vh;
+.centre-test {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  min-height: 100vh;
 }
 
 #page-container {
@@ -31,18 +35,26 @@ min-height: 100vh;
 }
 
 #content-wrap {
-  padding-bottom: 2.5rem;    /* Footer height */
+  padding-bottom: 2.5rem; /* Footer height */
 }
 
 #container {
   position: relative;
 }
 
-#container canvas1, #overlay {
+#container canvas1,
+#overlay {
   position: absolute;
   display: inline-block;
   background-color: black;
   font-family: helvetica;
   font-size: 40px;
   color: white;
+  padding: 10px;
+}
+
+#overlay:hover{
+  cursor:pointer;
+  background-color: white;
+  color: black;
 }

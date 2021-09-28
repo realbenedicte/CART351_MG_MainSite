@@ -1,0 +1,48 @@
+body {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+}
+
+#maximeCanvas {
+  background-image: linear-gradient(red, yellow);
+  display: none;
+  margin: 20px;
+}
+
+
+#maximeCanvas2 {
+  background-image: linear-gradient(blue, yellow);
+  display: none;
+  margin: 20px;
+}
+
+.centre-test{
+display: flex;
+align-items: center;
+justify-content: center;
+position: relative;
+min-height: 100vh;
+}
+
+#page-container {
+  position: relative;
+  min-height: 100vh;
+}
+
+#content-wrap {
+  padding-bottom: 2.5rem;    /* Footer height */
+}
+
+#container {
+  position: relative;
+}
+
+#container canvas1, #overlay {
+  position: absolute;
+  display: inline-block;
+  background-color: black;
+  font-family: helvetica;
+  font-size: 40px;
+  color: white;
+}

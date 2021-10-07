@@ -8,8 +8,7 @@ body {
   background-image: url("../images/spiral-3.png");
   background-repeat: no-repeat;
   background-position: center;
-  background-size: 50%;
-
+  background-size: 700px;
 }
 
 h2 {
@@ -172,9 +171,10 @@ svg {
 
 .circle-container {
   /* position: relative; */
-  position: absolute;
+  position: relative;
   top: 50%;
-  transform: translate(0, -50%);
+  transform: translate(0, 10%);
+
 }
 
 .circle-text {

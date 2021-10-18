@@ -1,0 +1,54 @@
+.body-wrapper{
+  width:70%;
+  margin-left:15%;
+  background: #6699ff;
+  padding-bottom:10px;
+}
+
+header h1{
+  text-align:center;
+  color:white;
+  background:#3377ff;
+  padding:2px;
+}
+
+#getData{
+  background:#003cb3;
+  color:white;
+  width:115px;
+  height:25px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.button-container{
+display: flex;
+justify-content: center
+}
+
+#result-container{
+  margin:2%;
+  background:#ccddff;
+  padding:2%;
+  display:flex;
+  flex-wrap:wrap;
+  }
+
+  .single-day{
+    width:40%;
+    background:#003cb3;
+    margin-left:5%;
+    padding:1%;
+    margin-bottom:2%;
+    color: white;
+
+  }
+  .single-day-parameter{
+    width:95%;
+    margin:2%;
+    background:#ccddff;
+    font-size:1em;
+    color:#003cb3;
+    padding:1%;
+
+}

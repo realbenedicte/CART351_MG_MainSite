@@ -1,0 +1,45 @@
+
+{"LunchItem":
+[
+  {
+    "Day":"Saturday",
+    "Lunch_Time": 2,
+    "What_Meal": "Bagel with cream cheese and red pepper",
+    "Where_I_Ate": "at home",
+    "Did_I_Cook": true,
+    "Mood": "happy food break",
+    "Food_Score": 7
+  },
+
+  {
+    "Day":"Sunday",
+    "Lunch_Time": 1,
+    "What_Meal": "Left over japanese curry from dinner",
+    "Where_I_Ate": "at home",
+    "Did_I_Cook": true,
+    "Mood": "stressed, had to eat fast",
+    "Food_Score": 7
+  },
+
+  {
+    "Day":"Monday",
+    "Lunch_Time": 2,
+    "What_Meal": "Bagel with cream cheese and red pepper",
+    "Where_I_Ate": "at home",
+    "Did_I_Cook": true,
+    "Mood": "happy food break",
+    "Food_Score": 7
+  },
+
+  {
+    "Day":"Tuesday",
+    "Lunch_Time": 2,
+    "What_Meal": "Bagel with cream cheese and red pepper",
+    "Where_I_Ate": "at home",
+    "Did_I_Cook": true,
+    "Mood": "happy food break",
+    "Food_Score": 7
+  }
+
+]
+}

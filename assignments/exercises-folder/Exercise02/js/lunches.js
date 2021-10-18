@@ -1,11 +1,21 @@
-$(document).ready(function(){
-  console.log("ready");
- let resultContainer = $("#result-container");
 
+//lunches.js
+//main javascript :)
+
+//ready function
+//on document load do stuff :)
+$(document).ready(function(){
+ console.log("ready");
+ //some variables
+ //
+ let resultContainer = $("#result-container");
  let header = $('header');
  let section = $('section');
  let loaded=false;
-
+ //
+ //click callback function
+ //
+ //if user clicks on the button with id 'getData' show all the days
    $("#getData").click(function(event){
      if(loaded ===false){
           console.log("clicked");
@@ -17,7 +27,7 @@ $(document).ready(function(){
             loaded=true;
             populateHeader(data);
             // //step 3: display the books ....
-          showBooks(data);
+          showDays(data);
           })
           //fail
           .fail(function() {
@@ -34,18 +44,24 @@ $(document).ready(function(){
           let sampleHeader = $("<h1>");
           $(sampleHeader).text(data.Label);
           $(sampleHeader).appendTo(header);
-
         }
 
-        function showBooks(data){
+        //showdays()
+        //
+        //this function shows every day cause iterates thru each day with a for loop
+        function showDays(data){
           let resultContainer = $("#result-container");
           for(let i = 0; i< data.LunchItem.length;i++ ){
           displaySingle(data.LunchItem[i],resultContainer);
+          //display single gets a day and a parentContainer
+          //in this case it's showing all the days
         }
         }
-    /** remember this??? */
-        function displaySingle(day,parentContainer){
 
+        //displaySingle()
+        //
+        //this function handles how to display each day
+        function displaySingle(day,parentContainer){
              //make the book container and append to parent
           let singleDayContainer = $("<article>").addClass("single-day").appendTo(parentContainer);
            $.each(day, function( index, value ) {
@@ -58,14 +74,14 @@ $(document).ready(function(){
              theContentArray = value;
 
              for(let i = 0; i<theContentArray.length; i++){
-               let singleYear =  $("<span>").addClass("single-year-test").appendTo(dayParameter);
-               singleYear.text(`*${theContentArray[i]}*-`);
+               let singleDay=  $("<span>").addClass("single-year-test").appendTo(dayParameter);
+               singleDay.text(`${theContentArray[i]}`);
              }
            }
 
            else{
-       let bookPropertyPara = $("<p>").addClass("single-day-para").appendTo(singleDayContainer); // creating an element  ** NOT accessing
-       bookPropertyPara.html(`${index} : ${value}`);
+       let dayPropertyPara = $("<p>").addClass("single-day-para").appendTo(singleDayContainer); // creating an element  ** NOT accessing
+       dayPropertyPara.html(`${index} : ${value}`);
      }
 
          });

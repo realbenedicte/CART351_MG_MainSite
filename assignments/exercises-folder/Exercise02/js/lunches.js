@@ -1,4 +1,3 @@
-
 //lunches.js
 //main javascript :)
 
@@ -26,8 +25,8 @@ $(document).ready(function(){
             //set boolean to true
             loaded=true;
             populateHeader(data);
-            // //step 3: display the books ....
-          showDays(data);
+            // //step 3: display the days ....
+            showDays(data);
           })
           //fail
           .fail(function() {
@@ -55,7 +54,7 @@ $(document).ready(function(){
           displaySingle(data.LunchItem[i],resultContainer);
           //display single gets a day and a parentContainer
           //in this case it's showing all the days
-        }
+            }
         }
 
         //displaySingle()
@@ -65,7 +64,6 @@ $(document).ready(function(){
              //make the book container and append to parent
           let singleDayContainer = $("<article>").addClass("single-day").appendTo(parentContainer);
            $.each(day, function( index, value ) {
-
             if(index ==="Day"){
              //is an array we would need to iterate at do its thing..
              let dayParameter =  $("<p>").addClass("day-parameter").appendTo(singleDayContainer);
@@ -78,12 +76,10 @@ $(document).ready(function(){
                singleDay.text(`${theContentArray[i]}`);
              }
            }
-
            else{
        let dayPropertyPara = $("<p>").addClass("single-day-para").appendTo(singleDayContainer); // creating an element  ** NOT accessing
        dayPropertyPara.html(`${index} : ${value}`);
      }
-
          });
         } //display single
   });

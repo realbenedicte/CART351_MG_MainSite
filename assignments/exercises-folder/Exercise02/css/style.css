@@ -14,13 +14,11 @@ header h1{
   padding:2px;
 }
 
-
 .title-name {
   text-align:center;
   width: 50%;
  margin: 0 auto;
 }
-
 
 .title-name > p{
   text-align:center;
@@ -32,7 +30,6 @@ header h1{
 .button-container{
 display: flex;
 justify-content: center;
-
 }
 
 #getData{
@@ -59,7 +56,6 @@ justify-content: center;
     transform: scale(0.99);
 }
 
-
 #randomDay{
   display: inline-block;
   border: none;
@@ -85,7 +81,6 @@ justify-content: center;
     transform: scale(0.99);
 }
 
-
 #result-container{
   margin:2%;
   background: white;
@@ -110,5 +105,4 @@ justify-content: center;
     font-size:1em;
     color:#003cb3;
     padding:1%;
-
 }

@@ -10,14 +10,24 @@
   <body>
     <div class="body-wrapper">
       <div class = "title-name">
-        <p> Maxime's Lunches</p>
+        <p id = "clearDays"> Maxime's Lunches</p>
+
         </div>
       <div class="button-container">
         <input type="button" id="getData" value="Load All Days" />
         <input type="button" id="randomDay" value="Load a Random Day" />
+        <!-- <input type="button" id="clearDays" value="Clear Days" /> -->
       </div>
-      <header></header>
+        <div class="search-container">
+          <p> search for a day:</p>
+          <input id="searchADay" type="text" placeholder="Search. eg. Monday..">
+        </div>
+      <div class = "introText">
+        <p> click or search to find out what Maxime's lunches were like :) </p>
+      </div>
+      <!-- <header></header> -->
       <section id="result-container"></section>
+      <section id="single-result-container"></section>
     </div>
   </body>
 </html>

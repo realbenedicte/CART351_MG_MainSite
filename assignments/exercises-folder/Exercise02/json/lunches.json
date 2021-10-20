@@ -3,42 +3,42 @@
 [
   {
     "Day":"Saturday",
-    "Lunch_Time": 2,
-    "What_Meal": "Bagel with cream cheese and red pepper",
-    "Where_I_Ate": "at home",
-    "Did_I_Cook": true,
+    "Lunch Time": 2,
+    "Meal": "Bagel with cream cheese and red pepper",
+    "Where": "at home",
+    "Did I Cook": "yes",
     "Mood": "happy food break",
-    "Food_Score": 7
+    "Tasty Score": 7
   },
 
   {
     "Day":"Sunday",
-    "Lunch_Time": 1,
-    "What_Meal": "Left over japanese curry from dinner",
-    "Where_I_Ate": "at home",
-    "Did_I_Cook": true,
+    "Lunch Time": 1,
+    "Meal": "Left over japanese curry from dinner",
+    "Where": "at home",
+    "Did I Cook": "yes",
     "Mood": "stressed, had to eat fast",
-    "Food_Score": 7
+    "Tasty Score": 7
   },
 
   {
     "Day":"Monday",
-    "Lunch_Time": 12,
-    "What_Meal": "Bagel with cream cheese and red pepper",
-    "Where_I_Ate": "at home",
-    "Did_I_Cook": true,
+    "Lunch Time": 12,
+    "Meal": "Bagel with cream cheese and red pepper",
+    "Where": "at home",
+    "Did I Cook": "yes",
     "Mood": "kinda underwhelmed cause I ate the same lunch on saturday",
-    "Food_Score": 5
+    "Tasty Score": 5
   },
 
   {
     "Day":"Tuesday",
-    "Lunch_Time": 1,
-    "What_Meal": "vegetable fried rice",
-    "Where_I_Ate": "at home",
-    "Did_I_Cook": true,
+    "Lunch Time": 1,
+    "Meal": "vegetable fried rice",
+    "Where": "at home",
+    "Did I Cook": "yes",
     "Mood": "was really good!",
-    "Food_Score": 9
+    "Tasty Score": 9
   }
 
 ]

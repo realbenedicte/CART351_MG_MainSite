@@ -88,7 +88,7 @@ $(document).ready(function() {
     $(".introText").hide(); //hide intro text
     $("#result-container").empty();//clear containers intro text
     $("#single-result-container").empty();
-
+    $("#single-result-container").show(); //make sure to show again :)
     let searchItem = $("#searchADay").val(); //submit button id = searchADay, this is the value typed by the user
     console.log(searchItem);
     console.log(jsonData.LunchItem[0].Day); //getting first item in LunchItem array index ===Day, value == name of the day ie. Saturday

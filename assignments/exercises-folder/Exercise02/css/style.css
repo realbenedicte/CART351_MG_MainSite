@@ -138,7 +138,7 @@ input[type="button"]:hover{
     color: black;
     border-style: solid;
     border-color: black;
-    background-image: url('/images/container.png');
+    background-image: url('../images/container.png');
     /* background-attachment: fixed; */
     background-position: center;
     background-size: 80%;

@@ -9,10 +9,13 @@
   </head>
   <body>
     <div class="body-wrapper">
+      <div class = "title-container">
+      <img src="/images/fork.png">
       <div class = "title-name">
         <p id = "clearDays"> Maxime's Lunches</p>
-
         </div>
+          <img src="/images/knife.png">
+      </div>
       <div class="button-container">
         <input type="button" id="getData" value="Load All Days" />
         <input type="button" id="randomDay" value="Load a Random Day" />
@@ -20,10 +23,16 @@
       </div>
         <div class="search-container">
           <p> search for a day:</p>
+          <form id = "submitDayForm">
           <input id="searchADay" type="text" placeholder="Search. eg. Monday..">
+          <input id = "submit-button" type="submit" value="submit">
+        </form>
         </div>
       <div class = "introText">
         <p> click or search to find out what Maxime's lunches were like :) </p>
+      </div>
+      <div id = "specialMessage">
+        <p> please type either: Saturday, Sunday, Monday or Tuesday </p>
       </div>
       <!-- <header></header> -->
       <section id="result-container"></section>

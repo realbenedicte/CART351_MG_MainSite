@@ -14,10 +14,21 @@ header h1{
   padding:2px;
 }
 
+.title-container > img{
+  width: 23px;
+  height: 106px;
+}
+.title-container {
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+}
+
 .title-name {
   text-align:center;
   width: 50%;
- margin: 0 auto;
+
+ padding:0;
 }
 
 .title-name > p{
@@ -52,6 +63,7 @@ display: flex;
 justify-content: center;
 flex-direction: column;
 }
+
 .search-container >p{
   display: inline-block;
   text-align: center;
@@ -60,11 +72,14 @@ flex-direction: column;
   margin-bottom: 10px;
 }
 
-#searchADay{
-    display: inline-block;
-    text-align: center;
-    margin: auto;
+.search-container > form{
+  display: inline-block;
+  text-align: center;
+  padding-top:10px;
+  margin:0;
+  margin-bottom: 10px;
 }
+
 
 input[type="button"]{
   display: inline-block;
@@ -88,6 +103,12 @@ input[type="button"]:hover{
 
 #clearDays{
   display: inline-block;
+}
+
+#specialMessage{
+  text-align: center;
+  margin: auto;
+  color: red;
 }
 
 #result-container{

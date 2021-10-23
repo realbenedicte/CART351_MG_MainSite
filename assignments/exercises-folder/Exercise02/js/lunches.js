@@ -5,6 +5,9 @@
 //Each property has a value.
 //If you parse the JSON string with a JavaScript program, you can access the data as an object:
 
+//Notes: LunchItem is an object with an array inside of it...
+//has a bunch of objects in it that represent each day
+
 //ready function
 //on document load do stuff :)
 $(document).ready(function() {
@@ -86,6 +89,7 @@ $(document).ready(function() {
   //the callback function for submit button
   function getTypedDay() {
     $(".introText").hide(); //hide intro text
+    $("#specialMessage").hide();//hide error message
     $("#result-container").empty();//clear containers intro text
     $("#single-result-container").empty();
     $("#single-result-container").show(); //make sure to show again :)
@@ -94,18 +98,25 @@ $(document).ready(function() {
     console.log(jsonData.LunchItem[0].Day); //getting first item in LunchItem array index ===Day, value == name of the day ie. Saturday
     let filteredData = jsonData.LunchItem.filter(getDay);
 
+    //filter call this function...
+    //does a day equal what the the user searched?
+    //iterate over all objs with Day
+    //return that day that matches
     function getDay(obj){
     return obj.Day  === searchItem;
       }
 
-    $("#specialMessage").show(); //show this message unless the filter result wrks
-
-    for (let i = 0; i < jsonData.LunchItem.length; i++) {
-      if (searchItem === jsonData.LunchItem[i].Day) {//only display the data if it's a Day the LunchiItem array
-      displaySingle(filteredData[0], singResultContainer); //displayy our filterTest
-      $("#specialMessage").hide();
+      //filtered data object is empty
+      //
+      if (filteredData.length === 0){
+        $("#specialMessage").show(); //show the error message
+        console.log(filteredData); // the filtered data is empty
+}
+      else {//filtered data has stuff !
+        for (let i = 0; i < filteredData.length; i++) {
+           displaySingle(filteredData[i], singResultContainer); //displayy the filtered data
+        }
       }
-    }
   }
   //displaySingle(data.LunchItem[0],resultContainer);//displays Saturday :)
   //display a random day :)
